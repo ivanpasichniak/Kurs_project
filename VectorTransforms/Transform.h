@@ -25,7 +25,6 @@ public:
         const int n = v.size();
         Vector<T> c(n);
         for (int j = 0; j < n; ++j) {
-            //c[j] = v[j];
             c[j] = v[n - 1 - j];
         }
         return c;
@@ -67,7 +66,7 @@ public:
         const int n = v.size();
         Vector<T> c(n);
         for (int j = 0; j < n; ++j) {
-            c[j] = v[j] + second_[j];//-
+            c[j] = v[j] + second_[j];
         }
         return c;
     }
